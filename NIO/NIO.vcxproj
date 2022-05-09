@@ -59,6 +59,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NIO_PLATFORM_WINDOWS;NIO_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)NIO\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -73,6 +74,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NIO_PLATFORM_WINDOWS;NIO_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)NIO\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -83,12 +85,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\NIO\Application.cpp" />
+    <ClCompile Include="src\NIO\Log.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\NIO.h" />
     <ClInclude Include="src\NIO\Application.h" />
     <ClInclude Include="src\NIO\Core.h" />
     <ClInclude Include="src\NIO\EntryPoint.h" />
+    <ClInclude Include="src\NIO\Log.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
