@@ -19,6 +19,10 @@
     <ClInclude Include="src\NIO\Log.h">
       <Filter>NIO</Filter>
     </ClInclude>
+    <ClInclude Include="src\NIO\Events\Event.h" />
+    <ClInclude Include="src\NIO\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\NIO\Events\KeyEvent.h" />
+    <ClInclude Include="src\NIO\Events\MouseEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\NIO\Application.cpp">
@@ -27,5 +31,8 @@
     <ClCompile Include="src\NIO\Log.cpp">
       <Filter>NIO</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>

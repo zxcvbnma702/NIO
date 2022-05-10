@@ -12,3 +12,5 @@
 #else
 	#error NIO only support Windows!
 #endif // NIO_PLATFORM_WINDOWS
+
+#define BIT(x) (1 << x)
