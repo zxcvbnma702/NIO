@@ -2,7 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
 /* ¼üÅÌÊÂ¼ş */
 namespace NIO {
 

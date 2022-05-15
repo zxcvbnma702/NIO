@@ -4,6 +4,9 @@
     <Filter Include="NIO">
       <UniqueIdentifier>{6B08880B-D711-887C-608D-9E7CCC95937C}</UniqueIdentifier>
     </Filter>
+    <Filter Include="NIO\Events">
+      <UniqueIdentifier>{EFAD285C-DB65-6AA9-446D-43053044059A}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\NIO.h" />
@@ -16,13 +19,22 @@
     <ClInclude Include="src\NIO\EntryPoint.h">
       <Filter>NIO</Filter>
     </ClInclude>
+    <ClInclude Include="src\NIO\Events\ApplicationEvent.h">
+      <Filter>NIO\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NIO\Events\Event.h">
+      <Filter>NIO\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NIO\Events\KeyEvent.h">
+      <Filter>NIO\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NIO\Events\MouseEvent.h">
+      <Filter>NIO\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\NIO\Log.h">
       <Filter>NIO</Filter>
     </ClInclude>
-    <ClInclude Include="src\NIO\Events\Event.h" />
-    <ClInclude Include="src\NIO\Events\ApplicationEvent.h" />
-    <ClInclude Include="src\NIO\Events\KeyEvent.h" />
-    <ClInclude Include="src\NIO\Events\MouseEvent.h" />
+    <ClInclude Include="src\hcpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\NIO\Application.cpp">
@@ -31,8 +43,6 @@
     <ClCompile Include="src\NIO\Log.cpp">
       <Filter>NIO</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="cpp.hint" />
+    <ClCompile Include="src\hcpch.cpp" />
   </ItemGroup>
 </Project>

@@ -18,6 +18,9 @@ project "NIO"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "hcpch.h"
+	pchsource "NIO/src/hcpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

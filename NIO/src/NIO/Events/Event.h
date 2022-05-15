@@ -1,9 +1,7 @@
 #pragma once
 
-#include "../Core.h"
+#include "NIO/Core.h"
 
-#include <string>
-#include <functional>
 
 namespace NIO {
 
